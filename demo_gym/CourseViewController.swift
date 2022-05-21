@@ -63,7 +63,7 @@ class CourseViewController: UIViewController {
             timer = timer - 1
         }else {
             courseTimer?.invalidate()
-            let navigation = self.storyboard?.instantiateViewController(withIdentifier: "SupportPage") as! supportViewController
+            let navigation = self.storyboard?.instantiateViewController(withIdentifier: "SupportPage") as! SupportViewController
             self.navigationController?.pushViewController(navigation, animated: true)
         }
     }
