@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomiseViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
 
     @IBOutlet weak var courseA: UIPickerView!
@@ -39,9 +39,8 @@ class CustomiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         course = courses[row]
-//        print(course)
+
         timer = durations[row]
-//        print(timer)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
