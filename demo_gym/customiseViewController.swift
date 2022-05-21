@@ -7,13 +7,51 @@
 
 import UIKit
 
-class customiseViewController: UIViewController {
+class CustomiseViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+
+    @IBOutlet weak var courseA: UIPickerView!
+    
+    var courses = ["Yoga","Boxing","Dance","Taichi","None"]
+    var durations = [30,15,45,45,0]
+    var course = ""
+    var timer = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        course = "Yoga"
+        timer = 30
+        courseA.dataSource = self
+        courseA.delegate = self
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return courses.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return courses[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        course = courses[row]
+//        print(course)
+        timer = durations[row]
+//        print(timer)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "courseTimer" {
+            let transferValue = segue.destination as! CourseViewController
+            transferValue.name = course
+            transferValue.timer = timer
+        }
+    }
+
     
 
     /*
@@ -27,3 +65,4 @@ class customiseViewController: UIViewController {
     */
 
 }
+
