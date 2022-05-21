@@ -11,12 +11,15 @@ class webVideoViewController: UIViewController {
 
     @IBOutlet weak var webview: WKWebView!
     
-    
     var id:String = ""
+    var videourl:URL?{
+        return URL(string: "https://www.youtube.com/embed/\(self.id)")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        id = UserDefaults.standard.string(forKey: "youtube")!
         
-        if let url = URL(string: "https://www.youtube.com/embed/AmCk7WHd8lA"){
+        if let url = self.videourl{
             let urlRequest = URLRequest(url: url)
             webview.load(urlRequest)
         }

@@ -17,12 +17,13 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     var course = ""
     var timer = 0
     var vid = ""
-    var videoID = ["aaa","ssdI","www","qqq","xxx"]
+    var videoID = ["oJBTw9tvh_s","KWmN5J_Npr4","u0oggGCS28g","e4VIw41R-PU","BHY0FxzoKZE","yTL_bNvXJ9s"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         course = "Yoga"
         timer = 180
+        vid = "oJBTw9tvh_s"
         courseA.dataSource = self
         courseA.delegate = self
     }
@@ -50,7 +51,7 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             let transferValue = segue.destination as! CourseViewController
             transferValue.name = course
             transferValue.timer = timer
-            transferValue.testid = vid
+            
             
         }
     }
