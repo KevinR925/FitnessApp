@@ -274,7 +274,7 @@
         <!--Customise View Controller-->
         <scene sceneID="szw-yU-s8j">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="h1f-2d-UOZ" customClass="CustomiseViewController" customModule="demo_gym" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="h1f-2d-UOZ" customClass="customiseViewController" customModule="demo_gym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHt-gr-QvE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -436,10 +436,10 @@
             </objects>
             <point key="canvasLocation" x="2800" y="1631"/>
         </scene>
-        <!--Video View Controller-->
+        <!--Web Video View Controller-->
         <scene sceneID="P1o-DY-rOM">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="boW-M3-bnU" customClass="videoViewController" customModule="demo_gym" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="boW-M3-bnU" customClass="webVideoViewController" customModule="demo_gym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lhp-O1-j2T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,7 +464,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="eKV-e4-h2F"/>
                     <connections>
-                        <outlet property="webview" destination="izB-vc-D2y" id="45f-4F-wMW"/>
+                        <outlet property="webview" destination="izB-vc-D2y" id="Ywp-Ac-nUf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvN-tt-gbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -533,7 +533,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WxI-Qb-uVK"/>
+        <segue reference="aOj-ps-S6E"/>
         <segue reference="15z-9K-ab5"/>
         <segue reference="0Q3-Kj-cme"/>
     </inferredMetricsTieBreakers>

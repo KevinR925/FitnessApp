@@ -18,11 +18,10 @@
 		3D1133BB2835BF87007A84AD /* demo_gymUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133BA2835BF87007A84AD /* demo_gymUITestsLaunchTests.swift */; };
 		3D1133C82835C5AE007A84AD /* FindOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133C72835C5AE007A84AD /* FindOneViewController.swift */; };
 		3D1133CA2835C6A4007A84AD /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133C92835C6A4007A84AD /* ContactTableViewCell.swift */; };
-		3D1133CC2835D0C2007A84AD /* CustomiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133CB2835D0C2007A84AD /* CustomiseViewController.swift */; };
 		3D1133CE2835D69D007A84AD /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1133CD2835D69D007A84AD /* CourseViewController.swift */; };
-		9714293628364F66008DB767 /* vedioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9714293528364F66008DB767 /* vedioViewController.swift */; };
-		971DFB4B2836271B00A3E1BD /* supportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971DFB4A2836271B00A3E1BD /* supportViewController.swift */; };
-		FA9EFA062836C31B0057D3DA /* videoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA052836C31B0057D3DA /* videoViewController.swift */; };
+		FA9EFA082838E9C30057D3DA /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA072838E9C30057D3DA /* SupportViewController.swift */; };
+		FA9EFA0A2838E9F80057D3DA /* webVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA092838E9F80057D3DA /* webVideoViewController.swift */; };
+		FA9EFA0C2838EAC50057D3DA /* customiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA0B2838EAC50057D3DA /* customiseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +57,10 @@
 		3D1133BA2835BF87007A84AD /* demo_gymUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_gymUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D1133C72835C5AE007A84AD /* FindOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindOneViewController.swift; sourceTree = "<group>"; };
 		3D1133C92835C6A4007A84AD /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
-		3D1133CB2835D0C2007A84AD /* CustomiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomiseViewController.swift; sourceTree = "<group>"; };
 		3D1133CD2835D69D007A84AD /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
-		9714293528364F66008DB767 /* vedioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vedioViewController.swift; sourceTree = "<group>"; };
-		971DFB4A2836271B00A3E1BD /* supportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supportViewController.swift; sourceTree = "<group>"; };
-		FA9EFA052836C31B0057D3DA /* videoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoViewController.swift; sourceTree = "<group>"; };
+		FA9EFA072838E9C30057D3DA /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		FA9EFA092838E9F80057D3DA /* webVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVideoViewController.swift; sourceTree = "<group>"; };
+		FA9EFA0B2838EAC50057D3DA /* customiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customiseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +120,10 @@
 				3D1133A52835BF87007A84AD /* Info.plist */,
 				3D1133C72835C5AE007A84AD /* FindOneViewController.swift */,
 				3D1133C92835C6A4007A84AD /* ContactTableViewCell.swift */,
-				3D1133CB2835D0C2007A84AD /* CustomiseViewController.swift */,
 				3D1133CD2835D69D007A84AD /* CourseViewController.swift */,
-				971DFB4A2836271B00A3E1BD /* supportViewController.swift */,
-				FA9EFA052836C31B0057D3DA /* videoViewController.swift */,
-				9714293528364F66008DB767 /* vedioViewController.swift */,
+				FA9EFA072838E9C30057D3DA /* SupportViewController.swift */,
+				FA9EFA092838E9F80057D3DA /* webVideoViewController.swift */,
+				FA9EFA0B2838EAC50057D3DA /* customiseViewController.swift */,
 			);
 			path = demo_gym;
 			sourceTree = "<group>";
@@ -280,14 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1133C82835C5AE007A84AD /* FindOneViewController.swift in Sources */,
+				FA9EFA0C2838EAC50057D3DA /* customiseViewController.swift in Sources */,
 				3D1133CA2835C6A4007A84AD /* ContactTableViewCell.swift in Sources */,
-				971DFB4B2836271B00A3E1BD /* supportViewController.swift in Sources */,
 				3D11339C2835BF86007A84AD /* ViewController.swift in Sources */,
-				FA9EFA062836C31B0057D3DA /* videoViewController.swift in Sources */,
 				3D1133982835BF86007A84AD /* AppDelegate.swift in Sources */,
+				FA9EFA0A2838E9F80057D3DA /* webVideoViewController.swift in Sources */,
+				FA9EFA082838E9C30057D3DA /* SupportViewController.swift in Sources */,
 				3D11339A2835BF86007A84AD /* SceneDelegate.swift in Sources */,
-				9714293628364F66008DB767 /* vedioViewController.swift in Sources */,
-				3D1133CC2835D0C2007A84AD /* CustomiseViewController.swift in Sources */,
 				3D1133CE2835D69D007A84AD /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
