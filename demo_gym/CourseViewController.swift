@@ -18,7 +18,7 @@ class CourseViewController: UIViewController {
     var delayTimer:Timer?
     var courseTimer:Timer?
     var countDownTimer:Timer?
-    var countDown = 5
+    var countDown = 3
     var timer:Int = 0
     var name:String = ""
    

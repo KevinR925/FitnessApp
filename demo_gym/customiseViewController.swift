@@ -12,12 +12,12 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
 
     @IBOutlet weak var courseA: UIPickerView!
     
-    var courses = ["Yoga","Boxing","Dance","Taichi","None","Test(only 10s)"]
-    var durations = [60,30,50,35,0,10]
+    var courses = ["Yoga","Boxing","Dance","Taichi"]
+    var durations = [60,30,50,10]
     var course = ""
     var timer = 0
     var vid = ""
-    var videoID = ["oJBTw9tvh_s","KWmN5J_Npr4","u0oggGCS28g","e4VIw41R-PU","BHY0FxzoKZE","yTL_bNvXJ9s"]
+    var videoID = ["oJBTw9tvh_s","KWmN5J_Npr4","u0oggGCS28g","e4VIw41R-PU"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

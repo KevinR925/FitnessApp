@@ -22,7 +22,6 @@
 		FA9EFA082838E9C30057D3DA /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA072838E9C30057D3DA /* SupportViewController.swift */; };
 		FA9EFA0A2838E9F80057D3DA /* webVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA092838E9F80057D3DA /* webVideoViewController.swift */; };
 		FA9EFA0C2838EAC50057D3DA /* customiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA0B2838EAC50057D3DA /* customiseViewController.swift */; };
-		FA9EFA1428391A7A0057D3DA /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EFA1328391A7A0057D3DA /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		FA9EFA072838E9C30057D3DA /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		FA9EFA092838E9F80057D3DA /* webVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVideoViewController.swift; sourceTree = "<group>"; };
 		FA9EFA0B2838EAC50057D3DA /* customiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customiseViewController.swift; sourceTree = "<group>"; };
-		FA9EFA1328391A7A0057D3DA /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				FA9EFA072838E9C30057D3DA /* SupportViewController.swift */,
 				FA9EFA092838E9F80057D3DA /* webVideoViewController.swift */,
 				FA9EFA0B2838EAC50057D3DA /* customiseViewController.swift */,
-				FA9EFA1328391A7A0057D3DA /* testViewController.swift */,
 			);
 			path = demo_gym;
 			sourceTree = "<group>";
@@ -287,7 +284,6 @@
 				FA9EFA0A2838E9F80057D3DA /* webVideoViewController.swift in Sources */,
 				FA9EFA082838E9C30057D3DA /* SupportViewController.swift in Sources */,
 				3D11339A2835BF86007A84AD /* SceneDelegate.swift in Sources */,
-				FA9EFA1428391A7A0057D3DA /* testViewController.swift in Sources */,
 				3D1133CE2835D69D007A84AD /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
