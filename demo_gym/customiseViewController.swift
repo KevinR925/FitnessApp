@@ -13,7 +13,7 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     @IBOutlet weak var courseA: UIPickerView!
     
     var courses = ["Yoga","Boxing","Dance","Taichi","None","Test(only 10s)"]
-    var durations = [180,60,120,300,0,10]
+    var durations = [60,30,50,35,0,10]
     var course = ""
     var timer = 0
     var vid = ""

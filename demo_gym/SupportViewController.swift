@@ -11,11 +11,15 @@ class SupportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.loadImage()
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var imageView: UIImageView!
+    func loadImage(){
+        let image = UIImage(named: "finish")
+        self.imageView.image = image
+    }
     /*
     // MARK: - Navigation
 

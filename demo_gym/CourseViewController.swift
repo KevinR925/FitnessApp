@@ -22,13 +22,59 @@ class CourseViewController: UIViewController {
     var timer:Int = 0
     var name:String = ""
    
+    @IBOutlet weak var imageGuide: UIImageView!
+    func loadImage() {
+        var image = UIImage(named: "logo")
+        if name == "Yoga"{
+            image = UIImage(named: "yoga1")
+        }else if name == "Boxing"{
+            image = UIImage(named: "boxing1")
+        }else if name == "Dance"{
+            image = UIImage(named: "dance1")
+        }
+        
+        self.imageGuide.image = image
+    }
     
+    func loadImageArray() {
+        var imgArray = Array<UIImage>()
+        if name == "Yoga"{
+            imgArray.append(UIImage(named: "yoga1")!)
+            imgArray.append(UIImage(named: "yoga2")!)
+            imgArray.append(UIImage(named: "yoga3")!)
+        }else if name == "Boxing"{
+            imgArray.append(UIImage(named: "boxing1")!)
+            imgArray.append(UIImage(named: "boxing2")!)
+            imgArray.append(UIImage(named: "boxing3")!)
+        }else if name == "Dance"{
+            imgArray.append(UIImage(named: "dance1")!)
+            imgArray.append(UIImage(named: "dance2")!)
+            imgArray.append(UIImage(named: "dance3")!)
+        }else if name == "Taichi"{
+            imgArray.append(UIImage(named: "taichi1")!)
+            imgArray.append(UIImage(named: "taichi2")!)
+            imgArray.append(UIImage(named: "taichi3")!)
+        }else{
+            imgArray.append(UIImage(named: "logo")!)
+        }
+        
+        
+        
+
+        self.imageGuide.animationImages = imgArray
+        self.imageGuide.animationDuration = 10
+        self.imageGuide.animationRepeatCount = 50
+        self.imageGuide.startAnimating()
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        print(name)
         courseName.text = name
+        
+        self.loadImageArray()
         
         countDownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
             timer in
