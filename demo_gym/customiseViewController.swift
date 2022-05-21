@@ -12,8 +12,8 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
 
     @IBOutlet weak var courseA: UIPickerView!
     
-    var courses = ["Yoga","Boxing","Dance","Taichi","None"]
-    var durations = [30,15,45,45,0]
+    var courses = ["Yoga","Boxing","Dance","Taichi","None","Test(only 10s)"]
+    var durations = [180,60,120,300,0,10]
     var course = ""
     var timer = 0
     var vid = ""
@@ -22,7 +22,7 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         course = "Yoga"
-        timer = 30
+        timer = 180
         courseA.dataSource = self
         courseA.delegate = self
     }
