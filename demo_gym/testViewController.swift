@@ -1,26 +1,22 @@
 //
-//  webVideoViewController.swift
+//  testViewController.swift
 //  demo_gym
 //
-//  Created by TengyueMacBook on 2022/5/21.
+//  Created by MacBook on 2022/5/21.
 //
 
 import UIKit
-import WebKit
-class webVideoViewController: UIViewController {
 
-    @IBOutlet weak var webview: WKWebView!
+class testViewController: UIViewController {
+
+    @IBOutlet weak var testid: UILabel!
     
-    
-    var id:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let id = UserDefaults.standard.string(forKey: "test1"){
+            testid.text = id   }
         
-        if let url = URL(string: "https://www.youtube.com/embed/AmCk7WHd8lA"){
-            let urlRequest = URLRequest(url: url)
-            webview.load(urlRequest)
-        }
-               
+       
     }
     
 

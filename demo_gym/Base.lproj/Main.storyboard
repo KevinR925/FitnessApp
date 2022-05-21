@@ -315,7 +315,18 @@
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="watch:" destination="h1f-2d-UOZ" eventType="touchUpInside" id="nRC-sP-Vbq"/>
                                     <segue destination="boW-M3-bnU" kind="show" id="dga-yA-cHS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q8-yL-AoB">
+                                <rect key="frame" x="177" y="831" width="61" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="testid"/>
+                                <connections>
+                                    <action selector="testwatch:" destination="h1f-2d-UOZ" eventType="touchUpInside" id="xzR-oz-9YA"/>
+                                    <segue destination="eR8-UR-CoP" kind="show" id="UGA-DL-yJc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -434,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwH-bI-JzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2800" y="1631"/>
+            <point key="canvasLocation" x="2798.5507246376815" y="1630.5803571428571"/>
         </scene>
         <!--Web Video View Controller-->
         <scene sceneID="P1o-DY-rOM">
@@ -469,7 +480,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvN-tt-gbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871" y="1653"/>
+            <point key="canvasLocation" x="-871.01449275362324" y="1652.6785714285713"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="dib-f4-WHt">
+            <objects>
+                <viewController id="eR8-UR-CoP" customClass="testViewController" customModule="demo_gym" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ud7-hi-HqC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="test inil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rda-sZ-Of9">
+                                <rect key="frame" x="100" y="339" width="214" height="218"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NR6-cy-lNA">
+                                <rect key="frame" x="119" y="678" width="102.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SZb-WC-fVb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rda-sZ-Of9" firstAttribute="leading" secondItem="SZb-WC-fVb" secondAttribute="leading" constant="100" id="GFz-X0-3ww"/>
+                            <constraint firstItem="NR6-cy-lNA" firstAttribute="leading" secondItem="SZb-WC-fVb" secondAttribute="leading" constant="119" id="Ll2-bH-Cjy"/>
+                            <constraint firstItem="SZb-WC-fVb" firstAttribute="bottom" secondItem="rda-sZ-Of9" secondAttribute="bottom" constant="300" id="MJD-6x-w4y"/>
+                            <constraint firstItem="rda-sZ-Of9" firstAttribute="centerX" secondItem="ud7-hi-HqC" secondAttribute="centerX" id="Mmm-Uu-eKf"/>
+                            <constraint firstItem="SZb-WC-fVb" firstAttribute="bottom" secondItem="NR6-cy-lNA" secondAttribute="bottom" constant="100" id="pFb-BI-T5N"/>
+                            <constraint firstItem="rda-sZ-Of9" firstAttribute="top" secondItem="SZb-WC-fVb" secondAttribute="top" constant="300" id="qP9-QL-rnS"/>
+                            <constraint firstItem="SZb-WC-fVb" firstAttribute="trailing" secondItem="rda-sZ-Of9" secondAttribute="trailing" constant="100" id="thY-OJ-zJU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dY4-ZX-zxm"/>
+                    <connections>
+                        <outlet property="testid" destination="rda-sZ-Of9" id="f4R-w0-OVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gF8-qk-CP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="1745"/>
         </scene>
         <!--Support View Controller-->
         <scene sceneID="38L-3r-2EY">
@@ -534,7 +587,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="aOj-ps-S6E"/>
-        <segue reference="15z-9K-ab5"/>
+        <segue reference="xOS-RQ-M0k"/>
         <segue reference="0Q3-Kj-cme"/>
     </inferredMetricsTieBreakers>
     <resources>

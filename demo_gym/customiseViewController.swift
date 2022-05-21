@@ -16,6 +16,8 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     var durations = [30,15,45,45,0]
     var course = ""
     var timer = 0
+    var vid = ""
+    var videoID = ["aaa","ssdI","www","qqq","xxx"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +41,8 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         course = courses[row]
-
         timer = durations[row]
+        vid = videoID[row]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,9 +50,18 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             let transferValue = segue.destination as! CourseViewController
             transferValue.name = course
             transferValue.timer = timer
+            transferValue.testid = vid
+            
         }
     }
-
+    @IBAction func watch(_ sender: Any) {
+        UserDefaults.standard.set(vid, forKey: "youtube")
+    }
+    
+    @IBAction func testwatch(_ sender: Any) {
+        UserDefaults.standard.set(vid, forKey: "test1")
+    }
+    
     
 
     /*

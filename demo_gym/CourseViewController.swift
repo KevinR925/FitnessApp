@@ -13,12 +13,15 @@ class CourseViewController: UIViewController {
     @IBOutlet weak var timeValue: UILabel!
     @IBOutlet weak var count: UILabel!
     
+   
+   
     var delayTimer:Timer?
     var courseTimer:Timer?
     var countDownTimer:Timer?
     var countDown = 5
     var timer:Int = 0
     var name:String = ""
+   
     
     
     
@@ -26,7 +29,7 @@ class CourseViewController: UIViewController {
         super.viewDidLoad()
 //        print(name)
         courseName.text = name
-
+        
         countDownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
             timer in
         
