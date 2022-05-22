@@ -88,12 +88,12 @@ class CourseViewController: UIViewController {
             }else {
                 //set the count down timer to invalid and make the count down label to nil
                 self.countDownTimer!.invalidate()
-                self.count.text = nil
+                self.count.text = ""
             }
         }
         
         
-        delayTimer = Timer.scheduledTimer(withTimeInterval: 6, repeats: false){
+        delayTimer = Timer.scheduledTimer(withTimeInterval: 4, repeats: false){
             timer in
 
             self.courseTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){

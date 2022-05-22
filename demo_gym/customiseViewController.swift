@@ -22,7 +22,7 @@ class customiseViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         course = "Yoga"
-        timer = 180
+        timer = 60
         vid = "oJBTw9tvh_s"
         courseA.dataSource = self
         courseA.delegate = self
