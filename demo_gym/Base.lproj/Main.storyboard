@@ -474,7 +474,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKm-6T-xeC">
-                                <rect key="frame" x="82" y="604" width="250" height="38"/>
+                                <rect key="frame" x="82" y="694" width="250" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="IR8-Ly-b5P"/>
                                 </constraints>
@@ -488,7 +488,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pai-oc-laB">
-                                <rect key="frame" x="82" y="672" width="250" height="60"/>
+                                <rect key="frame" x="82" y="762" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ET0-cb-ziI"/>
                                 </constraints>
@@ -501,11 +501,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iQ0-tb-vO3">
-                                <rect key="frame" x="50" y="124" width="314" height="252"/>
+                                <rect key="frame" x="50" y="124" width="314" height="248"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratuations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-hf-x28">
-                                <rect key="frame" x="56" y="526" width="302" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well Done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-hf-x28">
+                                <rect key="frame" x="125.5" y="622" width="163" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -516,12 +516,12 @@
                             <constraint firstItem="iQ0-tb-vO3" firstAttribute="leading" secondItem="B4o-7L-ERs" secondAttribute="leading" constant="50" id="1ON-PW-Fxd"/>
                             <constraint firstItem="Pai-oc-laB" firstAttribute="centerX" secondItem="G67-TC-tFq" secondAttribute="centerX" id="68H-gl-z9k"/>
                             <constraint firstItem="iQ0-tb-vO3" firstAttribute="leading" secondItem="B4o-7L-ERs" secondAttribute="leading" constant="50" id="8Qr-np-BCL"/>
-                            <constraint firstItem="B4o-7L-ERs" firstAttribute="bottom" secondItem="Pai-oc-laB" secondAttribute="bottom" constant="130" id="E0f-CX-zOX"/>
+                            <constraint firstItem="B4o-7L-ERs" firstAttribute="bottom" secondItem="Pai-oc-laB" secondAttribute="bottom" constant="50" id="E0f-CX-zOX"/>
                             <constraint firstItem="B4o-7L-ERs" firstAttribute="trailing" secondItem="iQ0-tb-vO3" secondAttribute="trailing" constant="50" id="LmH-Bm-8kK"/>
                             <constraint firstItem="B4o-7L-ERs" firstAttribute="trailing" secondItem="iQ0-tb-vO3" secondAttribute="trailing" constant="50" id="TAy-ri-lWo"/>
-                            <constraint firstItem="B4o-7L-ERs" firstAttribute="bottom" secondItem="sKm-6T-xeC" secondAttribute="bottom" constant="220" id="Wkh-y1-HMQ"/>
+                            <constraint firstItem="B4o-7L-ERs" firstAttribute="bottom" secondItem="sKm-6T-xeC" secondAttribute="bottom" constant="130" id="Wkh-y1-HMQ"/>
                             <constraint firstItem="Pai-oc-laB" firstAttribute="top" secondItem="sKm-6T-xeC" secondAttribute="bottom" constant="30" id="bDv-44-nme"/>
-                            <constraint firstItem="VSR-hf-x28" firstAttribute="top" secondItem="iQ0-tb-vO3" secondAttribute="bottom" constant="150" id="hGI-Cp-eZF"/>
+                            <constraint firstItem="VSR-hf-x28" firstAttribute="top" secondItem="iQ0-tb-vO3" secondAttribute="bottom" constant="250" id="hGI-Cp-eZF"/>
                             <constraint firstItem="VSR-hf-x28" firstAttribute="centerX" secondItem="G67-TC-tFq" secondAttribute="centerX" id="hdb-bS-ZTa"/>
                             <constraint firstItem="sKm-6T-xeC" firstAttribute="top" secondItem="VSR-hf-x28" secondAttribute="bottom" constant="30" id="lA5-V4-haX"/>
                             <constraint firstItem="sKm-6T-xeC" firstAttribute="centerX" secondItem="G67-TC-tFq" secondAttribute="centerX" id="qUr-Un-SGa"/>
@@ -539,7 +539,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WxI-Qb-uVK"/>
+        <segue reference="aOj-ps-S6E"/>
         <segue reference="15z-9K-ab5"/>
         <segue reference="0Q3-Kj-cme"/>
     </inferredMetricsTieBreakers>
